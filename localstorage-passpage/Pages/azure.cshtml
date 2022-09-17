@@ -1,0 +1,17 @@
+﻿@page
+@model localstorage_passpage.Pages.azureModel
+@{
+}
+
+<div>azure:<br><span id="cusname"></span></div>
+
+<script>
+
+    var sessionString = sessionStorage.getItem('reportvalue');
+    var customname = JSON.parse(sessionString);
+
+    document.getElementById('cusname').textContent = customname;
+
+
+
+</script>
